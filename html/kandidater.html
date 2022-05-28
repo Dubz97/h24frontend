@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kandidater</title>
+  <script defer src="../js/fetchKandidat.js"></script>
+  <script defer src="../js/fetchParti.js"></script>
+  <script defer src="../js/UpdateogDeleteKandidat.js"></script>
+  <link rel="stylesheet" href="../css/styleCSS.css">
+  <link rel="stylesheet" href="../css/TopBar.css">
+  <script defer src="../js/createKandidat.js"></script>
+
+</head>
+<body>
+<div class="header">
+
+  <div class="container">
+    <nav class="nav">
+      <ul>
+        <li><a id="current" href="kandidater.html">Kandidater</a></li>
+        <li><a href="parti.html">Partier</a></li>
+        <li><a href="addKandidat.html">Ny kandidat</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+<div class="table-wrap">
+  <table class="table" id="kandidatTable">
+    <thead>
+    <tr>
+      <th>Kandidat ID</th>
+      <th>Navn</th>
+      <th>Stemmetal </th>
+      <th>Parti ID</th>
+      <th>Parti Navn </th>
+    </tr>
+    </thead>
+  </table>
+</div>
+
+<!--TODO: sorter kandidater i det valgte parti-->
+<!--  <form id="sorterPartier" action="http://localhost:8080/kandidater" method="post"> -->
+<!--    <div class="sorterPartier">-->
+<!--<div>-->
+<!--  <label>Sorter parti:-->
+<!--    <select id="partiDropDown">-->
+<!--      <option> Vælg</option>-->
+<!--    </select>-->
+<!--  </label>-->
+<!--</div>-->
+
+<!--    </div>-->
+<!--  </form>-->
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/styleCSS.css">
+  <link rel="stylesheet" href="../css/TopBar.css">
+  <script defer src="../js/fetchParti.js"></script>
+  <script defer src="../js/createKandidat.js"></script>
+</head>
+<body>
+
+<div class="header">
+
+  <div class="container">
+    <nav class="nav">
+      <ul>
+        <li><a href="kandidater.html">Kandidater</a></li>
+        <li><a href="parti.html">Partier</a></li>
+        <li><a id="current" href="addKandidat.html">Ny kandidat</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
+<h3 id="eventTitle">Ny kandidat</h3>
+<div class="form-container">
+  <form id="assign" action="http://localhost:8080/kandidaterCreate" method="post">
+    <div class="addKandidat">
+
+      <div>
+        <label>* Navn
+          <input id="navnInput" type="text" name="navn">
+        </label>
+      </div>
+
+      <div>
+        <label>* Stemmetal
+          <input id="stemmeInput" type="text" name="stemmetal">
+        </label>
+      </div>
+
+      <div>
+        <label>* Parti
+          <select id="partiDropDown">
+            <option> Vælg</option>
+          </select>
+        </label>
+      </div>
+
+
+      <div id="footer">
+        <button id="saveBtn" type="submit" title="add Kandidat">Save</button>
+        <button id="cancelBtn" type="reset" title="cancel ">
+          <a href="kandidater.html">Cancel</a>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

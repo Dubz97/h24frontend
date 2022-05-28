@@ -1,0 +1,28 @@
+
+.header{
+  background: rgba(13, 16, 23, 0.42);
+  height: 100px;
+  margin: 0 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 3px 0 rgba(255, 255, 255, 0.2);
+
+}
+
+.nav ul {
+  display: flex;
+  margin:25px 50px;
+  list-style-type: none;
+  padding:0;
+  height:100%;
+
+}
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  display: block;
+  width:175px;
+  text-align: center;
+  padding:10px 0;
+}
